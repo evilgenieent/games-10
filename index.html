@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>五子棋</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery.js"></script>
+		<script src="js/index.js"></script>
+	</head>
+	
+	<body>
+		<!--进入游戏界面-->
+		<ul class="zhao">
+	        <li class="pic"></li>
+	        <li class="start"></li>
+	    </ul>
+	    
+	    <!--主界面-->
+		<div class="box">
+			<audio src="2.mp3"></audio>
+			
+			<div class="button">
+                <div class="st">
+                	开始游戏
+                </div>
+                <div class="xuanze">
+					<span class="renren">人人对战<input type="checkbox" /></span>      
+	                <span class="renji red">人机对战<input  type="checkbox" /></span>
+	                <div class='queding'>确认</div>                    
+				</div>	
+                <div class="ai">
+                	再来一局
+                </div>
+            </div>
+            
+            
+            
+            <div class="right-bottom">
+                <div class="heqi">游戏规则</div>
+                <div class="jieshao"><p>五子连珠就可以赢了,加油吧,少年!</p></div>
+                <div class="huiqi">查看棋谱</div>
+                <div class="renshu">退出游戏</div>
+            </div>
+			
+			<div class="info">
+				<div class="blackwin"></div>
+			</div>
+			
+			
+			<canvas height="600" width="600" id="canvas"></canvas>
+			
+			<!--关闭按钮-->
+			<div id="img">
+				<div class="close">x</div>
+			</div>
+			
+			
+			
+			<div class="biao">
+	            <canvas height="100" width="100" class="clock"></canvas>
+	            <div class="time">00:00</div>
+	        </div>
+	        <div class="biaoh">
+	            <canvas height="100" width="100" class="clockh"></canvas>
+	            <div class="time">00:00</div>
+	        </div>
+		</div>
+		
+	</body>
+</html>
